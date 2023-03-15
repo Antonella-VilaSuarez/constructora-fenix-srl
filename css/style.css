@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*fuentes*/
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap);
+
+/*Tipografia*/
+.naveg {
+  text-align: center;
+  text-decoration: none;
+  list-style-type: disc;
+  /*Box modeling*/
+  background-color: #022859;
+  color: #F2F2F2;
+  padding: 10px 30px;
+}
+
+nav {
+  text-align: right;
+  padding: 10px;
+  background-color: #022859;
+  flex-direction: row;
+}
+
+.naveg:hover {
+  background-color: #3786A6
+}
+
+.parte-del-nav {
+  font-family:'Heebo', sans-serif ;
+  text-align: left;
+  color: #F2F2F2;
+}
+
+/*Background-image*/
+.fondo-image {
+ background-image: url("../Img/fondo.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 0%;
+}
+/*titulos*/
+.fonts-title {
+  font-family: 'Heebo', sans-serif;
+ text-align: center;
+ text-transform: none;
+}
+/*texto*/
+.fonts {
+  font-family:'Heebo', sans-serif;
+  text-align: center;
+ font-size: 18px;
+ flex-direction: row;
+ flex-wrap: wrap;
+ line-height: 30px;
+ text-transform: none;
+}
+/*titulos secundarios*/
+.fonts-left {
+  font-family:'Heebo', sans-serif;
+ text-align: left;
+ border: 7px solid #f3f6f8;
+ background-color: #f3f6f8;
+}
+
+/*servicios*/
+.servicios{
+  font-family: 'Heebo', sans-serif ;
+  text-align: left;
+  font-size: 18px;
+}
+
+.ver-mas-servicios {
+  font-family: 'Heebo', sans-serif;
+  font-size: 17px;
+  text-align: right;
+  text-decoration: none;
+}
+.ver-mas-servicios:hover {
+  color: #F2F2F2;
+  background-color: #3786A6;
+}
+
+/*pie de pagina*/
+.footer {
+  font-family: 'Heebo', sans-serif ;
+  text-align: center;
+  color: #F2F2F2;
+  padding: 10px;
+  background-color:#022859
+
+}
+/*vinculo en texto*/
+.hiperv {
+  text-decoration:#047DCE;
+  list-style-type: none;
+  text-transform: none;
+}
+.contactenos {
+  background-color: #8BD9EA;
+  width: 30%;
+  text-align: center;
+  margin: 5% 20% 15% 35%;
+}
+/*Flexbox*/
+
+.formulario {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  border: 5px solid #047DCE;
+  width: 90%;
+  background-color: #047DCE;
+  color: black;
+  
+}
+/*GRIDS*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  column-gap: 10px;
+  
+}
