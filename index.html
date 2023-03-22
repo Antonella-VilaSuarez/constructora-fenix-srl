@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Constructora Fénix SRL</title>
  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
- <!--Hoja de estilo CSS-->
+ <!--Bootstrap dowland-->
+ 
+<link rel="stylesheet" href="./libs/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+ 
+<!--Hoja de estilo CSS-->
  <link rel="stylesheet" href="./css/style.css">
  <!--Fonts-->
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,43 +19,53 @@
 </head>
 <body>
  
-    <!--HTML Semantico-->
-   
-    <nav> 
-       <!--Enlaces relativos-->
-       <h2 class="parte-del-nav">CONSTRUCTORA FÉNIX SRL</h2>
-            <a href="#" class="naveg" >Inicio</a>
-         
-         
-            <a href="./page/Nosotros.html" class="naveg">Nosotros</a>
-       
-          
-            <a href="./page/Servicios.html" class="naveg">Servicios</a>
-         
-            <a href="./page/Proyectos.html" class="naveg">Proyectos</a>
-          
-            <a href="./page/Contacto.html" class="naveg" >Contacto</a>
-         
-    </nav> 
-    <br> <br> <br>
-    
-    <main class="fondo-image">
-			<img src="./Img/fondo.png"   alt="plano de Arquitectura">
-		</main>
-      
-<div class="fonts-title">
-
-<br> <br> <h1>  <b>  <i> CONSTRUCTORA FÉNIX S.R.L </i> </b></h1>
+ <!--HTML semantico-->
+ <header>
+  <nav class="navbar navbar-expand-lg box-header" id="botonera">
+    <div class="container">
+      <a class="navbar-brand animate__heartBeat" href="index.html">
+       Constructora Fénix SRL
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="5"></rect>
+            <rect y="30" width="100" height="5"></rect>
+            <rect y="60" width="100" height="5"></rect>
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item animate__heartBeat">
+            <a class="nav-link" aria-current="page" href="./page/Inicio.html">Inicio</a>
+          </li>
+          <li class="nav-item animate__heartBeat">
+            <a class="nav-link" href="./page/Nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item animate__heartBeat">
+            <a class="nav-link" href="./page/Servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item animate__heartBeat">
+            <a class="nav-link" href="./page/Proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item animate__heartBeat">
+            <a class="nav-link" href="./page/Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
-<header>
+  </nav>
+ </header>
+			<img class="fondo-image" src="./Img/fondo.png"   alt="plano de Arquitectura">
+  <main class="container-fluid">
+  
+ <h1 class="fonts-title h1">  <b>  <i> CONSTRUCTORA FÉNIX S.R.L </i> </b></h1>
 
-<br><br>
 <!--Padres e hijos-->
        <section>
         <article>
        
-        <h2> <i class="fonts-left"> Nuestra historia </i></h2> <br>
-        <h3>
+        <h2 class="h2"> <i class="fonts-left"> Nuestra historia </i></h2> <br>
+        <h3 class="h3">
           <p class="fonts">  Somos una empresa constructora especializada en brindar <a href="./page/Servicios.html" class="hiperv">servicios</a>, con el foco puesto en la 
             eficiencia y la calidad de las obras. Interpretamos las necesidades de nuestros clientes y volcamos nuestra
              experiencia con el compromiso de brindar soluciones rápidas y seguras. Nuestra empresa se destaca por la 
@@ -67,84 +81,58 @@ Contamos con un equipo altamente calificado para coordinar y resolver la constru
       </article>
     </section>
     <section class="section-uno">
-      <article>
-    <h2>
-       <i class="fonts-left"> Nuestros servicios</i> <br> <br> </h2>
-       <h3>
+      <article class="servicios">
+    <h2 class="h2">
+<i class="fonts-left"> Nuestros servicios</i>  </h2>
+<h3 class="h3">
         <!--Listas desordenadas-->
-       <ul class="servicios">
- 
-    Proyecto y dirección de obra.  | 
-       
-    Construcción en seco.  | 
- Pintura integral de obra.  | 
-  Pintura integral de obra.  | 
-Revestimientos.  | 
-Impermeabilizaciones.  | 
-Techos a nuevo y reparaciones.  | 
-Obras civiles industriales.  | 
-Montajes de oficinas.  | 
-Instalaciones eléctricas.  | 
- Instalaciones sanitarias.  | 
- Carpintería en general.  | 
- Carpintería de aluminio y PVC.  | 
-Mampostería en general.  | 
- Reformas.  | 
-Diseño.  | 
-Detalles de Arquitectura.  | 
-Obras de hormigón visto.  | 
- Herrería en general.  | 
- Gestión de obra.  |  Demoliciones.  | Construcción de piletas de natación, con o sin playa húmeda. 
- </ul>
+<p class="fonts">Proyecto y dirección de obra.  | Construcción en seco.  | Pintura integral de obra.  | Pintura integral de obra.  | Revestimientos.  | Impermeabilizaciones.  | Techos a nuevo y reparaciones.  | Obras civiles industriales.  | Montajes de oficinas.  | Instalaciones eléctricas.  | Instalaciones sanitarias.  | Carpintería en general.  | Carpintería de aluminio y PVC.  | 
+Mampostería en general.  | Reformas.  | Diseño.  | Detalles de Arquitectura.  | Obras de hormigón visto.  | Herrería en general.  | Gestión de obra.  |  Demoliciones.  | Construcción de piletas de natación, con o sin playa húmeda. <a class="ver-mas-servicios" href="./page/Servicios.html">Leer más...</a> 
+</p>
 
-<a class="ver-mas-servicios" href="./page/Servicios.html">Leer más...</a>
+
     </h3>
     </article>
 </section>
-</header>
-    
 
-    <br> <br> 
-   
-    
+    </main>
+    <div>
     <h2>
       <i class="fonts-left"> Contacto 
-         </i> 
-         </h2>
-     <br> <br>
-   
-     <h3 class="fonts"> Gracias por elegir Constructora Fénix S.R.L, para un presupuesto estimado y atención personalizada dejanos tu contacto y nos comunicaremos a la brevedad.</h3>
-     <section class="grid-container">
-     <article class="grid-item">
-     <h3 class="formulario">
+</i> 
+</h2>
+<h3 class="fonts"> Gracias por elegir Constructora Fénix S.R.L, para un presupuesto estimado y atención personalizada dejanos tu contacto y nos comunicaremos a la brevedad.</h3>
     
-     <!--Comienza formulario-->
-     
-     <form action="procesar_form.php" method="post" class="fonts-left"> 
+<div class="grid-container">
+<article class="grid-item">
+<h3>
+    
+<!--Comienza formulario-->
+<form action="procesar_form.php" method="post" class="fonts-left container"> 
           <p> <label for="Nombre">Ingrese su nombre:</label>  
-          <input type="text name= Nombre"> </p> <br>
+          <input type="text name= Nombre"> </p> 
 
          <p> <label for="Mail">Ingrese su mail:</label>
-          <input type="email"> </p> <br>
+          <input type="email"> </p> 
 
          <p> <label for="Numero">Ingrese su número de contacto:</label>
-          <input type="tel">  </p> <br>
+          <input type="tel">  </p> 
 
-       <p> <label for="Servicio">Detalles de su proyecto</label>
-      <br> <br>
+       <p> <label for="Servicio">Detalles de su proyecto</label> </p>
+      
 
       <!--Textarea-->
-        <textarea name="Mensaje"  cols="30" rows="10" placeholder="Ingrese aquí detalles de su proyecto.."></textarea> <br>
+       <p> <textarea name="Mensaje"  cols="30" rows="10" placeholder="Ingrese aquí detalles de su proyecto.."></textarea> 
           <button type="submit">Enviar</button> </p>
         </form>
         </h3>
       </article>
+      
+     </div>
     <!--Cierra formulario-->
-    <article class="grid-item">
-       <img src="./Img/headerpresupuesto.png" width="600px" height="400px" alt="">
-       </article>
+    
    </section>
-    <br> <br> <br> <br>
+  
     <footer class="footer">
         <h2>
             <b>
@@ -152,6 +140,9 @@ Obras de hormigón visto.  |
             </b>
         </h2>
     </footer>
+    <script src="./libs/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    
+  
   </body>
     
 </html>
