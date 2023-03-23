@@ -8,21 +8,22 @@
  <!--Bootstrap dowland-->
  
 <link rel="stylesheet" href="./libs/bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
- 
+<link rel="stylesheet" href="./libs/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js">
 <!--Hoja de estilo CSS-->
  <link rel="stylesheet" href="./css/style.css">
  <!--Fonts-->
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap" rel="stylesheet">
+
  
 </head>
 <body>
  
  <!--HTML semantico-->
  <header>
-  <nav class="navbar navbar-expand-lg box-header" id="botonera">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg" >
+    <div class="container-fluid">
       <a class="navbar-brand animate__heartBeat" href="index.html">
        Constructora Fénix SRL
       </a>
@@ -36,7 +37,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item animate__heartBeat">
-            <a class="nav-link" aria-current="page" href="./page/Inicio.html">Inicio</a>
+            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
           </li>
           <li class="nav-item animate__heartBeat">
             <a class="nav-link" href="./page/Nosotros.html">Nosotros</a>
@@ -104,11 +105,12 @@ Mampostería en general.  | Reformas.  | Diseño.  | Detalles de Arquitectura.  
 <h3 class="fonts"> Gracias por elegir Constructora Fénix S.R.L, para un presupuesto estimado y atención personalizada dejanos tu contacto y nos comunicaremos a la brevedad.</h3>
     
 <div class="grid-container">
-<article class="grid-item">
+<article>
 <h3>
+
     
 <!--Comienza formulario-->
-<form action="procesar_form.php" method="post" class="fonts-left container"> 
+<form action="procesar_form.php" method="post" class="fonts-left"> 
           <p> <label for="Nombre">Ingrese su nombre:</label>  
           <input type="text name= Nombre"> </p> 
 
