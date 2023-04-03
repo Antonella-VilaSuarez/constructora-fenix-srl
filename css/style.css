@@ -1,110 +1,122 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap);
 * {
   margin: 0;
   padding: 0;
 }
 
 /*fuentes*/
-@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap);
+/*Creación de variables*/
+/*Anidación*/
+header nav {
+  padding: 15px;
+  display: flex;
+  background-color: #022859;
+}
 
 /*Tipografia*/
 .navbar-brand {
- display: flex;
+  display: flex;
   text-decoration: none;
   list-style-type: disc;
   /*Box modeling*/
   background-color: #022859;
   color: #F2F2F2;
-  padding: 10px 30px;
+  padding: 10px 40px;
 }
 
 nav {
-padding: 20px 20px;
-background-color: #022859;
-color:#8BD9EA;
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
+  padding: 20px 20px;
+  background-color: #022859;
+  color: #8BD9EA;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar{
+.navbar {
   display: flex;
   max-width: 100%;
-
 }
 
 nav ul {
   display: flex;
   list-style: none;
   margin-right: 20px;
-  
 }
+
 nav li {
   margin-right: 20px;
   text-decoration: none;
   color: #F2F2F2;
   font-size: 1.1em;
 }
+
 nav a {
   text-decoration: none;
   color: #F2F2F2;
   font-size: 1.1em;
-  
 }
+
 .nav-link {
   display: flex;
   color: #F2F2F2;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   display: block;
   color: #047DCE;
 }
 
-
 /*Background-image*/
 .fondo-image {
-background-image: url("../Img/fondo.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-margin: 0%;
-max-width: 100%;
+  background-image: url("../Img/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  max-width: 100%;
 }
+
 /*titulos*/
 .fonts-title {
-  font-family: 'Heebo', sans-serif;
-text-align: center;
-text-transform: none;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  text-transform: none;
 }
+
 /*texto*/
 .fonts {
-  font-family:'Heebo', sans-serif;
+  font-family: "heebo", sans-serif;
   text-align: center;
-font-size: 18px;
-flex-direction: row;
-flex-wrap: wrap;
-line-height: 30px;
-text-transform: none;
+  font-size: 18px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  line-height: 30px;
+  text-transform: none;
 }
+
 /*titulos secundarios*/
 .fonts-left {
-font-family:'Heebo', sans-serif;
-text-align: left;
+  font-family: "Heebo", sans-serif;
+  text-align: left;
 }
 
 /*servicios*/
-.servicios{
-  font-family: 'Heebo', sans-serif ;
+.servicios {
+  font-family: "Heebo", sans-serif;
   text-align: left;
   font-size: 18px;
 }
 
 .ver-mas-servicios {
-  font-family: 'Heebo', sans-serif;
+  font-family: "Heebo", sans-serif;
   font-size: 17px;
   text-align: right;
   text-decoration: none;
 }
+
 .ver-mas-servicios:hover {
   color: #F2F2F2;
   background-color: #3786A6;
@@ -112,36 +124,38 @@ text-align: left;
 
 /*pie de pagina*/
 .footer {
-  font-family: 'Heebo', sans-serif ;
+  font-family: "Heebo", sans-serif;
   text-align: center;
   color: #F2F2F2;
   padding: 10px;
-  background-color:#022859
-
+  background-color: #022859;
 }
+
 /*vinculo en texto*/
 .hiperv {
-  text-decoration:#047DCE;
+  text-decoration: #047DCE;
   list-style-type: none;
   text-transform: none;
 }
+
 .contactenos {
   background-color: #8BD9EA;
   width: 30%;
   text-align: center;
   margin: 5% 20% 15% 35%;
 }
-/*Flexbox*/
 
+/*Flexbox*/
 .formulario {
   display: flex;
+  font-family: "heebo", sans-serif;
   justify-content: flex-start;
   flex-direction: column;
   text-align: left;
-  width: 50%;
-  color: black;
-  
+  color: #000;
+  width: 30%;
 }
+
 /*GRIDS*/
 .grid-container {
   display: grid;
@@ -149,15 +163,14 @@ text-align: left;
   grid-template-rows: 50% 50%;
   column-gap: 10px;
   color: black;
-
-  
 }
+
 /*grid areas*/
 body {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-grid-template-rows: 100px 500px;
-grid-template-columns: 100%;
+  grid-template-rows: 100px 500px;
+  grid-template-columns: 100%;
 }
 
 header {
@@ -167,26 +180,37 @@ header {
 
 section {
   display: grid;
-grid-area: main;
-
+  grid-area: main;
 }
 
-
+#botonera{
+background-color: #022859;
+}
+#botonera ul li{
+color: #F2F2F2;
+}
 /*mediaQueries*/
-
 @media screen and (max-width: 480px) {
-image{max-width: 100%;}
-.fonts{font-size: 10px;}
-.fonts-left{font-size: 10px;}
-.fonts-title{font-size: 15px;}
-p{font-size: 8px;}
-
-}
- 
- @media (prefers-reduced-motion:reduce){
-  .nav-link {
-      transition: none
+  image {
+    max-width: 100%;
   }
- }
+  .fonts {
+    font-size: 10px;
+  }
+  .fonts-left {
+    font-size: 10px;
+  }
+  .fonts-title {
+    font-size: 15px;
+  }
+  p {
+    font-size: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: none;
+  }
+}
 
-
+/*# sourceMappingURL=style.css.map */

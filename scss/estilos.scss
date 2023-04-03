@@ -6,15 +6,26 @@
   /*fuentes*/
   @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100&display=swap);
   
+/*Creación de variables*/
+$fonts-principal: "heebo", sans-serif;
+
+
+/*Anidación*/
+header nav {
+  padding: 15px;
+display: flex;
+background-color: #022859;
+}
+
   /*Tipografia*/
   .navbar-brand {
-   display: flex;
+  display: flex;
     text-decoration: none;
     list-style-type: disc;
     /*Box modeling*/
     background-color: #022859;
     color: #F2F2F2;
-    padding: 10px 30px;
+    padding: 10px 40px;
   }
   
   nav {
@@ -78,13 +89,14 @@
   }
   /*texto*/
   .fonts {
-    font-family:'Heebo', sans-serif;
-    text-align: center;
+  font-family: $fonts-principal;
+  text-align: center;
   font-size: 18px;
   flex-direction: row;
   flex-wrap: wrap;
   line-height: 30px;
   text-transform: none;
+  
   }
   /*titulos secundarios*/
   .fonts-left {
@@ -135,12 +147,12 @@
   
   .formulario {
     display: flex;
+    font-family: $fonts-principal;
     justify-content: flex-start;
     flex-direction: column;
     text-align: left;
-    width: 50%;
-    color: black;
-    
+    color: #000;
+    width: 30%;
   }
   /*GRIDS*/
   .grid-container {
@@ -171,7 +183,8 @@
   
   }
   
-  
+ 
+
   /*mediaQueries*/
   
   @media screen and (max-width: 480px) {
