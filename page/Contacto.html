@@ -65,29 +65,31 @@
 
 
 </h1>
+<div>
+  <section>
     <h2> 
         <i class="fonts-left">Contacto</i> </h2>
-    <br>
+    
    
      <h3 class="fonts"> Gracias por elegir Constructora Fénix S.R.L, para un presupuesto estimado y atención personalizada dejanos tu contacto y nos comunicaremos a la brevedad.</h3>
-     <section class="grid-container">
+     
+     <div class="grid-container">
      <article>
-    <h3 class="formulario">
+    <h3>
      <!--Comienza formulario-->
      
-     <form action="procesar_form.php" method="post" class="fonts-left container"> 
+     <form action="procesar_form.php" method="post" class="form-control"> 
           <p> <label for="Nombre">Ingrese su nombre:</label>  
-          <input type="text name= Nombre"> </p> <br>
+          <input type="text name= Nombre"> </p> 
 
          <p> <label for="Mail">Ingrese su mail:</label>
-          <input type="email"> </p> <br>
+          <input type="email"> </p> 
 
          <p> <label for="Numero">Ingrese su número de contacto:</label>
-          <input type="tel">  </p> <br>
+          <input type="tel">  </p> 
 
        <p> <label for="Servicio">Detalles de su proyecto</label>
-      <br> <br>
-
+      
       <!--Textarea-->
         <textarea name="Mensaje" cols="30" rows="10" placeholder="Ingrese aquí detalles de su proyecto.." ></textarea> <br>
           <button type="submit">Enviar</button> </p>
@@ -95,7 +97,7 @@
         </h3>
         </article>
     <!--Cierra formulario-->
-   
+     </div>
    </section>
 </main>
     <h4> <a href="../index.html">Volver</a>
@@ -108,5 +110,6 @@
             </b>
         </h2>
     </footer>
+    <script src="../libs/bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

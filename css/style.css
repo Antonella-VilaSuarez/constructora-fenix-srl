@@ -62,6 +62,7 @@ nav a {
 .nav-link {
   display: flex;
   color: #F2F2F2;
+  background-color: #022859;
 }
 
 .nav-link:hover {
